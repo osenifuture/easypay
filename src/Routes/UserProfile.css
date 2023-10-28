@@ -1,0 +1,29 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.profile-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.profile-info{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: opx auto;
+}
+
+.profile-info > button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #204D58;
+}

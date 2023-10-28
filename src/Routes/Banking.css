@@ -1,0 +1,392 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.banking-container1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 100px;
+  flex-direction: column;
+}
+
+.banking-container1 > span {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.banking-container1 > span > a {
+  color: #beae4e;
+  text-decoration: none;
+}
+.banking-container1 > h3 {
+  color: #143e4a;
+  font-size: 1.5rem;
+}
+.banking-container1 > span > h4 {
+  color: #1086a4;
+}
+.banking-container1 > span > .fa-solid {
+  color: #1086a4;
+  font-size: 0.8rem;
+}
+
+.banking-container2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px 100px;
+  background-color: #143e4a;
+}
+
+.banking-container2 > a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    transition: 0.3s ease-in-out;  
+    border: 1px solid #beae4e;;
+    border-radius: 30px;
+    font-weight: bold; 
+}
+
+.banking-container2 > a:hover{
+    background-color: #beae4e; 
+    transition: 0.3s ease-in-out;
+}
+
+.banking-container2 > h1 {
+  color: white;
+}
+
+.banking-container2 > span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.banking-con {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.banking-con > img {
+  width: 100%;
+  height: 200px;
+}
+
+.banking-1 {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  background-color: #0e6481;
+}
+
+.banking-1 > p {
+  margin: 10px 0px;
+  line-height: 1.4rem;
+}
+
+.banking-2 {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #1f938b;
+}
+
+.banking-2 > p {
+  margin: 10px 0px;
+  line-height: 1.4rem;
+}
+
+.banking-3 {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #beae4e;
+}
+
+.banking-3 > p {
+  margin: 10px 0px;
+  line-height: 1.4rem;
+}
+
+.banking-box2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #204d58;
+  /* flex-direction: column; */
+}
+
+.banking-box2 > span {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.banking-box2 > span > a {
+  text-decoration: none;
+  color: #1086a4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  margin: 3px 0px;
+}
+
+.banking-box2 > span > a:hover {
+  color: #beae4e;
+}
+
+.banking-box2 > span > a > .fa-solid {
+  font-size: 0.7rem;
+}
+
+.banking-container3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px 100px;
+  background-color: #204d58;
+}
+
+.banking-container3 > a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    transition: 0.3s ease-in-out;  
+    border: 1px solid #beae4e;;
+    border-radius: 30px;
+    font-weight: bold;   
+}
+
+.banking-container3 > a:hover{
+    background-color: #beae4e;
+    transition: 0.3s ease-in-out;  
+
+}
+
+.banking-container3 > h1 {
+  color: white;
+}
+
+.banking-container3 > span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.banking-box3 > span {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.banking-box3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #143e4a;
+}
+
+.banking-box3 > span > a {
+  text-decoration: none;
+  color: #1086a4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  margin: 3px 0px;
+}
+
+.banking-box3 > span > a:hover {
+  color: #beae4e;
+}
+
+.banking-box3 > span > a > .fa-solid {
+  font-size: 0.7rem;
+}
+
+.banking-span {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  padding: 0px 100px;
+  background-color: #143e4a;
+}
+
+.banking-container4 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 50px 100px;
+  background-color: #143e4a;
+}
+
+.banking-con1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.banking-con1 > img {
+  width: 100%;
+  height: 250px;
+}
+
+.banking-box4 {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 20px;
+  flex-direction: column;
+  background-color: #204d58;
+}
+
+.banking-box4 > h3 {
+  color: white;
+}
+.banking-box4 > p {
+  color: #1086a4;
+  line-height: 1.4rem;
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 650px) {
+  .banking-container1 {
+    padding: 10px;
+  }
+
+  .banking-container2 {
+      padding: 10px;
+    }
+    
+    .banking-container2 > a{
+        margin: 20px 0px;
+    }
+
+    .banking-container2 > span{
+      flex-direction: column;
+
+  }
+
+  .banking-con{
+    width: 100%;
+  }
+
+  .banking-1{
+    height: fit-content;
+    padding: 10px;
+  }
+  .banking-2{
+    height: fit-content;
+    padding: 10px;
+  }
+  .banking-3{
+    height: fit-content;
+    padding: 10px;
+  }
+
+  .banking-box2{
+    height: fit-content;
+  }
+
+  .banking-container3{
+    padding: 10px;
+  }
+
+  .banking-container3 > a{
+    margin: 20px 0px;
+}
+
+
+  .banking-container3 > span{
+    flex-direction: column;
+  }
+
+  .banking-box3{
+    height: fit-content;
+  }
+
+  .banking-span{
+    padding: 10px;
+  }
+
+  .banking-container4{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    padding: 10px ;
+  }
+
+  .banking-con1 > img{
+    height: 120px;
+  }
+
+  .banking-box4{
+    background: transparent;
+    padding:0px;
+    height: 200px;
+  }
+
+  .banking-box4 > p{
+    font-size: 0.5rem;
+  }
+  .banking-box4 > h3{
+    font-size: 0.8rem;
+    margin: 4px 0px;
+  }
+}

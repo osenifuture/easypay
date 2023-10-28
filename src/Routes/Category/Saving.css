@@ -1,0 +1,239 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.saving-container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 100px;
+    flex-direction: column;
+}
+
+.saving-container1 > span{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.saving-container1 > span > a{
+    color: #BEAE4E;
+    text-decoration: none;
+}
+.saving-container1 > h3{
+    color:#143E4A;
+    font-size: 1.5rem;
+}
+.saving-container1 > span > h4{
+    color: #1086a4;
+}
+.saving-container1 > span > .fa-solid{
+    color: #1086a4;
+    font-size: 0.8rem;
+}
+
+.saving-container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px  100px;
+    background-color: #143E4A;
+}
+
+.saving-box1{
+    width: 60%;
+    height: 450px;
+}
+
+.saving-box1 > img{
+    width: 100%;
+    height: 100%;
+}
+
+.saving-box2{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.saving-box2 > h3{
+    color: #BEAE4E;
+    margin: 10px 0px;
+}
+.saving-box2 > p{
+    color:#1086a4; 
+    line-height: 1.5rem;
+    margin: 5px 0px;
+}
+
+.saving-container3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px  100px;
+    background-color: #143E4A ;
+}
+
+.saving-container3 > h1{
+    color: white;
+}
+
+.saving-container3 > span{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 20px;
+    /* background-color: red; */
+}
+
+.saving-container3 > span > a{
+    text-decoration: none;
+    width: 12%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.saving-container3 > span > a > img{
+    width: 100%;
+    height: 100px;
+}
+
+.saving-container3 > span > a > h4{
+    color: #BEAE4E;
+    margin: 10px 0px;
+    font-size: 0.8rem;
+}
+
+
+.saving-container4{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #143E4A  ;
+}
+
+.saving-container4 > form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.saving-container4 > form > h1{
+    color: white;
+}
+
+.saving-container4 > form > input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    margin: 6px 0px;
+    padding-left: 10px;
+    background: transparent;
+    border: 1px solid   #1086a4;
+}
+
+.saving-container4 > form > .combination{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background: transparent;
+    outline: none;
+    margin: 6px 0px;
+    gap: 10px;
+}
+
+.saving-container4 > form > .combination > input{
+    width: 50%;
+    height: 100%;
+    border: 1px solid   #1086a4;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+}
+
+.saving-container4 > form > textarea{
+    width: 100%;
+    height: 80px;
+    outline: none;
+    margin: 6px 0px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid   #1086a4;
+}
+
+.saving-container4 > form > button{
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    margin: 6px 0px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:#BEAE4E;
+}
+
+
+@media screen and (max-width:650px) {
+    .saving-container1{
+        padding: 10px;
+    }
+
+    .saving-container2{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .saving-box1{
+        width: 100%;
+        height: 300px;
+    }
+
+    .saving-box2{
+        width: 100%;
+        padding:10px 0px;
+    }
+
+    .saving-container3{
+        padding: 10px;
+    }
+
+    .saving-container3 > span{
+        gap: 8px;
+    }
+
+    .saving-container3 > span > a{
+       width:100%;
+       gap: 2px;
+       margin: 0px ;
+    }
+
+    .saving-container4{
+        padding: 10px;
+    }
+
+    .saving-container4 > form{
+        width: 100%;
+    }
+}
+
