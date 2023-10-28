@@ -41,7 +41,13 @@ const SignUp = () => {
 
     const handleSignIn = async () => {
         await createGoogleUserAuth();
+        navigate('/')
     };
+
+    // const handleSIGN = async () => {
+    //     await createGooglruserAuth()
+    //     navigate('/')
+    // }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -57,7 +63,7 @@ const SignUp = () => {
                }
         try {
             const { user } = await createUserwithEandP(email, password);
-            await createUserDocRef(user, displayName, userName, phone, address);
+            await createUserDocRef(user, displayName, userName, phone, confirmPassword, address);
             console.log(user)
         } catch (error) {
             console.log(error.message);
