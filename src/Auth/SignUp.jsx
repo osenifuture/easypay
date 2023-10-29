@@ -44,33 +44,59 @@ const SignUp = () => {
         navigate('/')
     };
 
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setError(null);
+        if (password !== confirmPassword) {
+            setError("Wrong Password");
+        } else if (password.length < 6 || confirmPassword.length < 6) {
+            setError('Password must be at least 6 characters long');
+        } else {
+            try {
+                const { user } = await createUserwithEandP(email, password);
+                await createUserDocRef(user, displayName, userName, phone, confirmPassword, address);
+                toast.success('User created successfully');
+                resetForm();
+                navigate('/');
+                console.log(formField)
+            } catch (error) {
+                setError(error.message);
+            }
+        }
+    
+        setIsLoading(false);
+    };
+    
+
     // const handleSIGN = async () => {
     //     await createGooglruserAuth()
     //     navigate('/')
     // }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsLoading(true)
-        toast.success('User created successfully')
-        if(password !== confirmPassword) {
-                    setError("Wrong password!")
-                } else if(password.length < 6  || confirmPassword.length < 6) {
-                     setError('Weak password')
-                } else {
-                     console.log(formField)
-                    setFormField(defaultForm)
-               }
-        try {
-            const { user } = await createUserwithEandP(email, password);
-            await createUserDocRef(user, displayName, userName, phone, confirmPassword, address);
-            console.log(user)
-        } catch (error) {
-            console.log(error.message);
-        }
-        resetForm();
-        navigate('/');
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     setIsLoading(true)
+    //     toast.success('User created successfully')
+    //     if(password !== confirmPassword) {
+    //                 setError("Wrong password!")
+    //             } else if(password.length < 6  || confirmPassword.length < 6) {
+    //                  setError('Weak password')
+    //             } else {
+    //                  console.log(formField)
+    //                 setFormField(defaultForm)
+    //            }
+    //     try {
+    //         const { user } = await createUserwithEandP(email, password);
+    //         await createUserDocRef(user, displayName, userName, phone, confirmPassword, address);
+    //         console.log(user)
+    //     } catch (error) {
+    //         console.log(error.message);
+    //     }
+    //     resetForm();
+    //     navigate('/');
+    // };
 
 
     const handleChange = (e) => {
@@ -110,7 +136,7 @@ const SignUp = () => {
                 </div>
                 <input data-aos="fade-up" type="tel" name="phone" placeholder="Phone Number" value={phone} onChange={handleChange} required />
                 <input data-aos="fade-down" type="text" name="address" placeholder="Address" value={address} onChange={handleChange} required />
-                <button data-aos="fade-up" type="submit">{isLoading ? "Creating" : "Sign up"}</button>
+                <button data-aos="fade-up" type="submit">{isLoading ? "Creating..." : "Sign up"}</button>
                 <p data-aos="fade-down" onClick={() => navigate('/')}>Member already! Login</p>
             </form>
             <button data-aos="fade-up" onClick={handleSignIn}>Sign-In with Google</button>
