@@ -337,7 +337,7 @@ code {
     position: fixed;
     transform: translateX(-100%);
     transition:transform 0.3s ease-in-out;
-    background-color: white;
+    background-color:#143E4A;
   }
 
   .nav-link.mobile-link.active{
@@ -352,24 +352,60 @@ code {
 
   .nav-link > .link1{
     color: #1086a4;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:  1px solid white;
   }
   .nav-link > .link2{
     color: #1086a4;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:  1px solid white;
   }
   .nav-link > .link3{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:  1px solid white;
     color: #1086a4;
   }
   .nav-link > .link4{
     color: #1086a4;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:  1px solid white;
   }
   .nav-link > .link5{
     color: #1086a4;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:  1px solid white;
   }
   .nav-link > .link6{
     color: #1086a4;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:  1px solid white;
   }
   .nav-link > .link7{
     color: #1086a4;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:  1px solid white;
+    padding: 0px 10px;
   } 
 }
 

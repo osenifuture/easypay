@@ -70,34 +70,6 @@ const SignUp = () => {
     };
     
 
-    // const handleSIGN = async () => {
-    //     await createGooglruserAuth()
-    //     navigate('/')
-    // }
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     setIsLoading(true)
-    //     toast.success('User created successfully')
-    //     if(password !== confirmPassword) {
-    //                 setError("Wrong password!")
-    //             } else if(password.length < 6  || confirmPassword.length < 6) {
-    //                  setError('Weak password')
-    //             } else {
-    //                  console.log(formField)
-    //                 setFormField(defaultForm)
-    //            }
-    //     try {
-    //         const { user } = await createUserwithEandP(email, password);
-    //         await createUserDocRef(user, displayName, userName, phone, confirmPassword, address);
-    //         console.log(user)
-    //     } catch (error) {
-    //         console.log(error.message);
-    //     }
-    //     resetForm();
-    //     navigate('/');
-    // };
-
 
     const handleChange = (e) => {
         const { name, value } = e.target;
