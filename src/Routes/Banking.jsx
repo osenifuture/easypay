@@ -1,7 +1,14 @@
 import "./Banking.css";
 import { Link } from "react-router-dom";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 const Banking = () => {
+  useEffect(() => {
+    Aos.init({duration:1000})
+  }, [])
   return (
     <Fragment>
       <div className="banking-container1">
@@ -13,9 +20,9 @@ const Banking = () => {
         </span>
       </div>
       <div className="banking-container2">
-        <h1>PERSONAL BANKING</h1>
+        <h1 data-aos="fade-down">PERSONAL BANKING</h1>
         <span>
-          <div className="banking-con">
+          <div data-aos="fade-down" className="banking-con">
             <img src="https://i.ibb.co/84Cm9Wq/im-633687.jpg" alt="" />
             <div className="banking-1">
               <h3>CHEQUING & SAVINGS ACCOUNTS</h3>
@@ -69,7 +76,7 @@ const Banking = () => {
               </span>
             </div>
           </div>
-          <div className="banking-con">
+          <div data-aos="zoom-up" className="banking-con">
             <img
               src="https://i.ibb.co/QXrLwJV/depositphotos-235370142-stock-photo-cropped-view-mortgage-broker-shaking.webp"
               alt=""
@@ -115,7 +122,7 @@ const Banking = () => {
               </span>
             </div>
           </div>
-          <div className="banking-con">
+          <div data-aos="fade-up" className="banking-con">
             <img
               src="https://i.ibb.co/52GN2NW/02c71e56-aa14-11ed-ba16-0210609a3fe2.jpg"
               alt=""
@@ -180,7 +187,7 @@ const Banking = () => {
       <div className="banking-container3">
         <h1>BUSINESS BANKING</h1>
         <span>
-          <div className="banking-con">
+          <div data-aos="fade-down" className="banking-con">
             <img
               src="https://i.ibb.co/yfC9W4v/lk-business-savings-account-400x-400y.jpg"
               alt=""
@@ -237,7 +244,7 @@ const Banking = () => {
               </span>
             </div>
           </div>
-          <div className="banking-con">
+          <div data-aos="zoom-up" className="banking-con">
             <img src="https://i.ibb.co/Y8tsM3H/images-9.jpg" alt="" />
             <div className="banking-2">
               <h3>CASH MANAGEMENT SERVICES</h3>
@@ -280,7 +287,7 @@ const Banking = () => {
               </span>
             </div>
           </div>
-          <div className="banking-con">
+          <div data-aos="fade-up" className="banking-con">
             <img src="https://i.ibb.co/84Cm9Wq/im-633687.jpg" alt="" />
             <div className="banking-3">
               <h3>BORROWING AND CREDIT</h3>
@@ -344,7 +351,9 @@ const Banking = () => {
       </div>
       <div className="banking-container4">
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFhBc_Cp9FW3qo0Ho2_JzCaCeGEdflnd_iz1N7mgcQeDdikgPq1hqtFQXOKnKtonkjEoY&usqp=CAU" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Capital Raising:</h3>
             <p>
@@ -356,7 +365,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/jL3CYk6/what-are-mergers-and-acquisitions-social.jpg" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Mergers and Acquisitions (M&A):</h3>
             <p>
@@ -369,7 +380,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/b7D63Fr/financial-advisors-636x357.jpg" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Financial Advisory: </h3>
             <p>
@@ -382,7 +395,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://www.toolshero.com/wp-content/uploads/2022/08/project-risk-management-toolshero.jpg" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Risk Management:</h3>
             <p>
@@ -393,7 +408,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/Yd6WTGG/Introducing-kandon-Technologies-Liquidity-Management-and-Treasury-Management-Products-for-Brands-sca.jpg" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Treasury Services: </h3>
             <p>
@@ -404,7 +421,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/64g8sW1/structured-finance.jpg" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Structured Finance:</h3>
             <p>
@@ -415,7 +434,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/w6P2X2s/1512736397php-Trs-Ral.jpg" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Corporate Banking: </h3>
             <p>
@@ -426,7 +447,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/C2gTnbC/webpc-passthru.webp" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Equity and Debt Capital Markets:</h3>
             <p>
@@ -438,7 +461,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/Bywb3Kr/hero-major-policy-research-2x.webp" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Research and Analysis:</h3>
             <p>
@@ -450,7 +475,9 @@ const Banking = () => {
           </div>
         </div>
         <div className="banking-con1">
+          <div className="image-card">
           <img src="https://i.ibb.co/hcNp3vy/william-william-Nnd-Kt2k-F1-L4-unsplash.jpg" alt="" />
+          </div>
           <div className="banking-box4">
             <h3>Trade and Export Finance: </h3>
             <p>
