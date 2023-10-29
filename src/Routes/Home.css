@@ -320,3 +320,91 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .home-container1 {
+    height: 700px;
+  }
+
+  .home-container1-overlay {
+    width: 100%;
+    padding: 10px;
+    /* background-color: red; */
+  }
+
+  .home-container1-overlay > span {
+    flex-direction: column;
+  }
+
+  .home-container1-overlay > h1 {
+    width: 90%;
+    margin: 10px 0px;
+    font-size: 2rem;
+    /* background-color: orange; */
+  }
+
+  .home-span1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .span1-link1 {
+    width: 100%;
+    padding: 10px;
+  }
+  .span1-link2 {
+    width: 100%;
+    padding: 10px;
+  }
+  .span1-link3 {
+    width: 100%;
+    padding: 10px;
+  }
+  .span1-link4 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .home-span2{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .typewriter-container {
+    font-size: 1rem; 
+    margin: 10px 0;
+  }
+
+  .home-container2 {
+    flex-direction: column;
+    padding: 10px;
+    /* background-color: red; */
+  }
+
+  .home-box1 {
+    width: 100%;
+    padding: 0px;
+    /* background-color: pink; */
+  }
+
+  .home-box1 > span {
+    width: 90%;
+    margin: 10px 15px;
+  }
+
+  .home-box1 > .fa-solid {
+    margin: 10px 0px;
+  }
+
+  .home-container3 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .home-box2 {
+    width: 100%;
+  }
+}
+
+

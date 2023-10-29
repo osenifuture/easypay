@@ -24,7 +24,7 @@ const Mortgage = () => {
       <div className="saving-container2">
         <div data-aos="zoom-in-up" className="saving-box1">
           <img
-            src="https://i.ibb.co/SNdKZcs/finishing-successful-deal-real-estate-260nw-1414827998.webp"
+            src="https://i.ibb.co/QXrLwJV/depositphotos-235370142-stock-photo-cropped-view-mortgage-broker-shaking.webp"
             alt=""
           />
         </div>
