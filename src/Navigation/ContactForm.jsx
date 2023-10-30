@@ -39,6 +39,7 @@ const ContactForm = () => {
           if(!response.ok) {
               throw new Error(responseData.message)
           }
+          console.log(form)
           resetForm()
       } catch (error) {
         setIsLoading(false)

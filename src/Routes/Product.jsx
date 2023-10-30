@@ -15,7 +15,6 @@ const Product = () => {
         </div>
         <div className="product-container2">
             <ProductSwitch/>
-
         </div>
         </Fragment>
     )

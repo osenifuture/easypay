@@ -318,3 +318,14 @@
         flex-direction: column;
     }
 }
+
+
+@media screen and (max-width:768px) {
+    .product-container1{
+        padding: 10px;
+    }
+
+    .product-container2{
+        padding: 10px;
+    }
+}

@@ -186,5 +186,33 @@
         padding: 10px 0px;
     }
  }
+
+ @media screen and (max-width:768px) {
+    .contact-container1{
+        padding:10px ;
+    }
+
+    .contact-container2{
+        padding: 10px;
+    }
+    
+    .contact-container2 > span{
+        flex-direction: column;
+
+    }
+
+    .contact-con1{
+        width: 100%;
+    }
+    .contact-con2{
+        width: 100%;
+    }
+    .contact-con3{
+        width: 100%;
+        padding: 10px 0px;
+    }
+ }
+
+
  
  
